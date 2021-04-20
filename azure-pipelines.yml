@@ -19,9 +19,6 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    codeCoverageToolOption: Cobertura
-    codeCoverageClassFilesDirectories: '$(System.DefaultWorkingdirectory)/app/src/'
-    codeCoverageFailIfEmpty: false
     goals: 'package'
 - task: CopyFiles@2
   inputs:
